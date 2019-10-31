@@ -1,0 +1,47 @@
+.chat {
+    float: left;
+    width: 69%;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    padding: auto;
+    margin: auto;
+    overflow: auto;
+}
+
+.chat::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.users {
+    float: right;
+    width: 30%;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 1px;
+    padding: auto;
+    margin: auto;
+    overflow: auto;
+}
+
+.enter {
+    float: left;
+    width: 69%;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 1px;
+    padding: auto;
+    margin: auto;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.name-left {
+    float: left;
+    color: #aaa;
+}
