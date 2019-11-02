@@ -7,6 +7,7 @@ import util.DataUtil;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class InMemoryUserRepositoryImpl implements InMemoryUserRepository {
 
@@ -38,6 +39,8 @@ public class InMemoryUserRepositoryImpl implements InMemoryUserRepository {
     @Override
     public List<User> getAll() {
         users.sort(Comparator.comparing(User::getName));
-        return users;
+        return users.stream()
+                .filter(User::isOnline)
+                .collect(Collectors.toList());
     }
 }
