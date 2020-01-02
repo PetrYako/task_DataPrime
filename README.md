@@ -1,6 +1,4 @@
 # testTaskDataPrime
-Site: https://obscure-escarpment-85981.herokuapp.com
-
 In process...
 
 Implement simple chat:
